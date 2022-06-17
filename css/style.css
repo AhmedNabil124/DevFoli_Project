@@ -1,0 +1,420 @@
+/* Start Section Home */
+.home {
+    background-image: url(../img/hero-bg.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.navbar .navbar-nav .nav-link {
+    font-weight: bold;
+    color: white;
+    position: relative;
+}
+
+.navbar .navbar-nav .nav-item .active::after {
+    content: "";
+    top: 80%;
+    left: 15px;
+    width: 60%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    transition: 1s;
+}
+
+.navbar .navbar-nav .navLink::after {
+    content: "";
+    top: 80%;
+    left: 15px;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    transition: 1s;
+}
+.navbar .navbar-nav .navItem:hover .navLink::after {
+    width: 60%;
+}
+.nav-item:hover .dropdown-menu{
+    display: block;
+}
+
+
+.navbar .navbar-toggler {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: #fff;
+}
+
+.home .typed {
+    margin-top: 100px;
+}
+
+.home .typed h1 {
+    font-size: 50px;
+}
+
+.home .typed h3 {
+    overflow: hidden;
+    border-right: 3px solid;
+    margin: auto;
+    white-space: nowrap;
+    width: 22ch;
+    animation: typing 5s steps(50) infinite, blink 0.5s step-end infinite alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.about {
+    background-color: rgb(248, 249, 250);
+    padding-top: 90px;
+    padding-bottom: 80px;
+}
+
+.about .container {
+    box-shadow: 8px 8px 4px #fff;
+    background-color: #fff;
+    padding-top: 50px;
+}
+
+.title-left {
+    position: relative;
+    font-size: 32px;
+
+}
+
+.title-left::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 100px;
+    bottom: -12px;
+    left: 0;
+}
+
+.services {
+    background-color: rgb(248, 249, 250);
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.all-info {
+    position: relative;
+}
+
+.all-info::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    background-color: #0078ff;
+    width: 35px;
+    bottom: -12px;
+}
+
+.services .head-icon {
+    margin: auto;
+    width: 50px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 60px;
+    border: 10px solid #0078ff;
+}
+
+.icon {
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+.head-icon {
+    transition: 0.5s;
+}
+
+.services .card:hover .head-icon {
+    background-color: #0078ff;
+    color: #fff;
+    border: 10px solid #96b2d1;
+}
+
+/* Start Section Work */
+.work .work-icon {
+    margin: auto;
+    width: 50px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 40px;
+    border: 10px solid #96b2d1;
+}
+.work {
+    background-image: url(../img/counters-bg.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.work .overlay {
+    background-color: #0078ff;
+    opacity: 0.7;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    position: absolute;
+}
+
+.work .container {
+    padding: 50px;
+    color: #fff;
+}
+
+.work .container .card {
+    background-color: transparent;
+}
+
+.work .work-icon .icon {
+    margin-left: -15px;
+    margin-top: -15px;
+}
+
+/* End Section Work */
+
+
+/* Start Section portfolio */
+.portfolio {
+    background-color: rgb(248, 249, 250);
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.portfolio .card .img-port {
+    overflow: hidden;
+}
+
+.portfolio .card .img-port img {
+    transition: 0.5s;
+}
+
+.portfolio .card:hover img {
+    transform: scale(1.2);
+}
+
+/* End Section portfolio */
+
+
+/* Start Section blog */
+.blog {
+    background-color: rgb(248, 249, 250);
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.blog .all-info::after {
+    bottom: 65px;
+}
+
+.blog .all-info {
+    padding-bottom: 60px;
+}
+
+.card-category-box {
+    position: absolute;
+    text-align: center;
+    top: -16px;
+    left: 15px;
+    right: 15px;
+}
+
+.card-category {
+    display: inline-block;
+    color: #fff;
+    padding: 0 15px 5px;
+
+    background-color: #0078ff;
+    border-radius: 4px;
+}
+
+.category {
+    color: #fff;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.1px;
+    margin-bottom: 0;
+}
+
+/* End Section blog */
+
+
+/* Start Section slides */
+.slides {
+    background-image: url(../img/overlay-bg.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.slides .overlay {
+    background-color: #0078ff;
+    opacity: 0.7;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    position: absolute;
+}
+
+.slides img {
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 160px;
+}
+
+/* End Section slides */
+
+
+/* Start Section contact */
+.contact {
+    background-image: url(../img/overlay-bg.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.contact .container {
+    background-color: #fff;
+    padding: 60px;
+}
+
+.contact .contact-head {
+    position: relative;
+}
+
+.contact .contact-head::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    background-color: #0078ff;
+    width: 120px;
+    bottom: -12px;
+    left: 12px;
+}
+
+.contact .container .icon-contact {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid #0078ff;
+
+}
+
+.contact .container .icon-contact .df {
+    margin-left: 8px;
+    font-size: 20px;
+}
+
+/* End Section contact */
+
+/* Start Section Footer */
+
+footer {
+
+    background: #8282e4;
+}
+
+/* End Section Footer */
+
+
+/* Media Query For THis Website */
+@media (max-width:500px) {
+
+    .icon {
+        margin-left: -13px;
+        margin-top: -10px;
+    }
+
+    .all-info::after {
+        width: 75px;
+        left: 138px;
+    }
+
+    .contact .container .icon-contact .df {
+        margin-left: 8px;
+        margin-top: 6px;
+    }
+
+    .home .typed h1 {
+        font-size: 35px;
+    }
+
+    .lead {
+        font-size: 1.1rem;
+    }
+
+    .work .work-icon .icon {
+        margin-left: -11px;
+        padding-bottom: 10px;
+    }
+
+    .home .typed h2 {
+        font-size: 30px;
+    }
+
+    .progress {
+        width: 85%;
+    }
+
+    .mt-1 {
+        margin-top: 0.6rem !important;
+    }
+
+    p {
+        margin-top: 5px;
+    }
+}
+@media (max-width: 991px) {
+    .navbar-nav {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 30px;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        color: #000;
+        transition: 0.5s;
+    }
+
+    .navbar .navbar-nav .nav-item .active {
+        color: #0078ff;
+    }
+
+    .navbar-nav .nav-item .nav-link:hover {
+        color: #0078ff;
+    }
+}
